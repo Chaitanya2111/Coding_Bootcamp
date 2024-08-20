@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions in js</title>
+</head>
+<body>
+    <script>
+//  first method
+        let name = ' CR';
+        function sendText(){
+            console.log(name);
+        }
+
+        sendText();
+
+
+        // second method
+
+        function sendName(name,age){
+            console.log('hii i am '+ name + ' and i am '+ age + ' old' );
+        }
+        sendName('CR', 23);
+        sendName('Rj', 24);
+        sendName('RD', 20);
+
+
+        // 3
+
+function setReminder(name,time){
+    console.log('Dear ' + name + ' your meeting is at' + time);
+}
+
+setReminder('kalu',3);
+setReminder('balu',5);
+setReminder('nalu',6);
+setReminder('lalu',2);
+
+// 4
+
+let sname = 'Raut';
+let count = 1;
+
+function showAlert(){
+    console.log(sname + ' wake up! this is alarm nubmer ' + count + '!');
+    count += 1;
+}
+
+showAlert();
+showAlert();
+showAlert();
+showAlert();
+
+    </script>
+</body>
+</html>

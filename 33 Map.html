@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+// Map()
+// its creates a NEW Array 
+// values.map(value => value)
+
+// Example 1
+const ages2018 = [21,22,35,50,19];
+console.log(ages2018);
+
+const ages2022 =ages2018.map(age => age + 4);
+
+console.log(ages2022);
+
+// Example 2
+
+const housemate2018 = [
+    {name :'sonu',
+    age : 24
+
+    },
+    {
+        name :'monu',
+    age : 20
+    },
+    {
+        name :'bonu',
+    age : 21
+    }
+];
+
+const housemate2022 =housemate2018.map(housemate => housemate.age + 3);
+console.log(housemate2022);
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+  </head>
+  <style>
+body {
+  font-family: sans-serif;
+  background-color: lightskyblue;
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.circle {
+  margin: 10px;
+  height: 120px;
+  width: 125px;
+  background-color: rgb(225, 255, 0);
+  padding-left: 5px;
+  border-radius: 60px;
+}
+
+.flower {
+  width: 120px;
+  height: 40px;
+  border-radius: 20px;
+  background: hotpink;
+  margin-top: 40px;
+  margin-right: 5px;
+}
+
+.flower::after,
+.flower::before {
+  content: '';
+  position: absolute;
+  background: hotpink;
+  border-radius: 20px;
+  width: 120px;
+  height: 40px;
+  transform: rotate(60deg);
+}
+
+.flower::before {
+  transform: rotate(-60deg);
+  background: hotpink;
+}
+
+
+
+  </style>
+  <body>
+    <div class="circle">
+        <div class="flower"></div>
+      </div>
+      <div class="circle">
+          <div class="flower"></div>
+        </div>    
+        <div class="circle">
+            <div class="flower"></div>
+          </div>
+
+
+
+          <script>
+//forEach()
+
+const circles = document.querySelectorAll('.circle');
+
+console.log(circles);
+
+circles.forEach(circle  => circle.style.backgroundColor = 'red');
+
+
+// forEach example 1
+const names = ['sonu', 'monu','kalu'];
+
+names.forEach(name => console.log(name));
+
+
+// forEach example 2
+
+const scores =[10,20,30,40,50,60,70,80,90];
+ 
+scores.forEach(score =>{
+    console.log(score + 2);
+});
+
+          </script>
+
+
+
+
+  </body>
+  </html>

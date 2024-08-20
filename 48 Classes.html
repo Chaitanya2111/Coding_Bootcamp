@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes</title>
+</head>
+<body>
+    <script>
+
+// classes 
+// Class Declaration
+
+/*
+class Rectangle{
+    constructor(height,width){
+        this.height = height
+        this.width = width
+    }
+}
+const newRectangle = new Rectangle(300,100)
+
+console.log(newRectangle);
+*/
+
+
+class Ghost{
+    constructor(className,speed,color,startingpoint){
+        this.classsName = className;
+        this.speed = speed;
+        this.color = color;
+        this.startingpoint = startingpoint;
+    }
+}
+
+const blinky = new Ghost('blinky', 300,'blue',4)
+const linky = new Ghost('linky',250,'orange',10)
+const pinky = new Ghost('pinky',340,'red',16)
+const inky = new Ghost('inky',400,'green',7)
+ 
+
+console.log(blinky.speed)
+
+
+    </script>
+</body>
+</html>

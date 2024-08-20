@@ -1,0 +1,14 @@
+body{
+    background-color: aqua;
+    border-radius: 30px;
+    margin-top: 100px;
+}
+
+
+
+
+
+.container{
+    display: flex;
+    flex-direction: row;
+}

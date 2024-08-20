@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects in Arrays</title>
+</head>
+<body>
+    <script>
+// Arrays
+
+const users = [{
+    name : 'Chaitanya',
+    lastName : 'Raut',
+    hobby : 'Driving'
+},{
+    name : 'Ranjit',
+    lastName : 'Jadhav',
+    hobby : 'Photography'
+},{
+    name : 'Rashmi',
+    lastName : 'Devkar',
+    hobby : 'Making Reels'
+}];
+
+
+console.log(users);
+console.log(users[0]);
+console.log(users[1].lastName);
+
+for(let i =0; i < users.length; i++){
+    if (users[i].hobby === 'Making Reels'){
+        console.log('hiiii ' + users[i].name + ' You are a good acter')
+
+    }
+}
+
+
+    </script>
+</body>
+</html>

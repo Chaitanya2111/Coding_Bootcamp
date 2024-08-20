@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SetTimeout</title>
+</head>
+<body>
+<div class="bubble"></div>
+<div class="bubble2">Hello </div>
+
+    <script>
+    //   setTimeout
+    
+    const speechBubble = document.querySelector('.bubble')
+
+    const time = 3000;
+
+    function showText(){
+        speechBubble.innerHTML =' Hey Chaitanya'
+    }
+
+    setTimeout(showText,time);
+
+
+
+    function deleteText(){
+        speechBubble.innerHTML = ''
+    }
+
+    setTimeout(deleteText,10000)
+
+
+
+
+
+
+    const bubble = document.querySelector('.bubble2')
+
+    function deleteBubble(){
+        bubble.style.display = 'none';
+    }
+
+setTimeout(deleteBubble,5000)
+
+
+
+    </script>
+</body>
+</html>
